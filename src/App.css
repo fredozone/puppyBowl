@@ -1,0 +1,443 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #d9bbf7;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+}
+
+.styleLink {
+  padding: 20px;
+  color: black;
+}
+
+.navbar-link {
+  color: black;
+}
+
+.navbar-link:first-child {
+  margin-right: 10px;
+}
+
+#all-players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputAndSearchBar {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.searchBar {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 51px;
+}
+
+.inputSearchBar {
+  width: 200px !important;
+  height: 32px !important;
+}
+
+.button-search {
+  height: 33px;
+  width: 89px;
+  background-color: #9445d8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+#searchInput {
+  display: flex;
+  flex-direction: row;
+}
+
+#errorSearch {
+  width: 31%;
+  padding-left: 5px;
+  color: red;
+}
+
+.ResetSearch {
+  background-color: #d9bbf7;
+  border: 1px solid #d9bbf7;
+  margin-top: 10px;
+}
+
+.ResetSearch:hover {
+  background-color: #c59aef;
+  border: 1px solid #c59aef;
+}
+
+.card-style {
+  background-color: #ecf2ff;
+  border-radius: 10px;
+  border: 4px solid #e5d1fa;
+  min-height: 546px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 22px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.imgDiv {
+  min-width: 250px;
+}
+.imagenPlayer {
+  width: 300px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: block;
+  height: 338px;
+}
+
+.infoPet {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.namePlayer {
+  height: 80px;
+  background-color: #e5d1fa;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.little-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.playerName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.idPlayer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 33px;
+}
+
+.button-style {
+  width: 133px;
+  height: 33px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.button-delete {
+  background-color: #dc3545;
+  border: 1px solid #b7192c;
+  color: white;
+  width: 45%;
+  font-size: 0.9rem;
+}
+
+.button-delete:hover {
+  background-color: #b7192c;
+  border-color: #dc3545;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+/* form */
+#addNewPlayerTitle {
+  margin-bottom: 20px;
+}
+#new-player-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+.group-div {
+  display: flex;
+  justify-content: center;
+  min-width: 530px;
+}
+
+.group-div:last-child {
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 250px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.label-style {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#radio-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.label-radio {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+input[type="text"],
+input[type="url"] {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 25px;
+  padding-left: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus {
+  border: 3px solid #e5d1fa;
+}
+
+input {
+  accent-color: #e5d1fa;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type="file"]::before {
+  content: "Choose File";
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="file"]:hover::before {
+  background-color: #e5d1fa;
+  border: 1px solid black;
+}
+input[type="file"]:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+input[type="radio"] {
+  width: 15px;
+  background-color: white;
+  color: black;
+}
+
+.button-Save {
+  background-color: #9445d8;
+  font-weight: 600;
+  border: 2px solid #9445d8;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  width: 100%;
+  height: 42px;
+}
+
+.button-Save:hover {
+  background-color: #6b2e9b;
+  border: 2px solid #6b2e9b;
+}
+
+.button-see {
+  background-color: #9445d8;
+  color: white;
+  border: 1px solid white;
+  width: 45%;
+  border-radius: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.button-see:hover {
+  background-color: white;
+  color: #9445d8;
+  border: 1px solid #9445d8;
+}
+
+.breed {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerInformation {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.bodyCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 4px solid #e5d1fa;
+  border-radius: 10px;
+  padding: 10px;
+  height: 575px;
+}
+
+.singleCard {
+  width: 100%;
+}
+
+.imagenSinglePlayer {
+  width: 357px;
+}
+
+#SinglePlayerTitle {
+  margin-bottom: 20px;
+}
+
+#singlePlayerPhoto {
+  border-radius: 5px;
+  min-height: 547.5px;
+  object-fit: cover;
+}
+
+.titleSinglePlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9445d8;
+  margin-bottom: 10px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+.PlayerInformationTag {
+  font-weight: 600;
+}
+
+.singleCard:last-child .titleSinglePlayer {
+  margin-top: 10px;
+}
+
+#OtherTeamMembers {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#ULstyle {
+  position: relative;
+  right: -18px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.linkSinglePlayer {
+  color: #9445d8;
+}
+
+.linkSinglePlayer:hover {
+  color: #6b2e9b;
+  text-decoration: underline;
+}
+/**********************************************************
+                    PHONE VIEW
+**********************************************************/
+@media (min-width: 320px) and (max-width: 767px) {
+  .group-div {
+    min-width: 0px;
+    justify-content: flex-start;
+  }
+
+  .info {
+    min-width: 0px;
+  }
+
+  #new-player-form {
+    margin-top: 35px;
+  }
+}
